@@ -6,7 +6,6 @@ $serverAdmin = isset($_SERVER['SERVER_ADMIN']) ? trim($_SERVER['SERVER_ADMIN']) 
 $hasAdmin = ($serverAdmin != '' && filter_var($serverAdmin, FILTER_VALIDATE_EMAIL));
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
 <title>IPPiyo - Privacy Policy</title>
@@ -19,23 +18,23 @@ $hasAdmin = ($serverAdmin != '' && filter_var($serverAdmin, FILTER_VALIDATE_EMAI
 
 <table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody><tr>
-    <td><img src="img/main_03.gif" width="577" height="126" usemap="#Map" border="0"></td>
+    <td><img alt="IPPiyo Navigation" src="img/main_03.gif" width="577" height="126" usemap="#Map" border="0"></td>
   </tr>
 </tbody></table>
 
 <table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody><tr>
 
-    <td width="26"><img src="img/26.gif" width="26" height="10"></td>
+    <td width="26"><img alt="" src="img/26.gif" width="26" height="10"></td>
 
     <td width="19" valign="top" background="img/7.gif">
-      <img src="img/7.gif" width="19" height="430">
+      <img alt="" src="img/7.gif" width="19" height="430">
     </td>
 
     <td width="511" valign="top">
 
-      <img src="img/pixel.gif" width="511" height="17" border="0"><br>
-      <img src="img/priv.gif" width="511" height="23" border="0">
+      <img alt="" src="img/pixel.gif" width="511" height="17" border="0"><br>
+      <img alt="Privacy Policy" src="img/priv.gif" width="511" height="23" border="0">
 
       <p>
         <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">
@@ -136,30 +135,30 @@ $hasAdmin = ($serverAdmin != '' && filter_var($serverAdmin, FILTER_VALIDATE_EMAI
     </td>
 
     <td width="21" valign="top" background="img/9.gif">
-      <img src="img/9.gif" width="21" height="430">
+      <img alt="" src="img/9.gif" width="21" height="430">
     </td>
 
   </tr>
 </tbody></table>
 
 <map name="Map">
-  <area shape="rect" coords="373,71,418,94" href="/help.php">
-  <area shape="rect" coords="223,71,370,94" href="/portscan.php">
-  <area shape="rect" coords="136,72,223,94" href="/">
+  <area alt="Help" shape="rect" coords="373,71,418,94" href="/help.htm">
+  <area alt="Security Port Scan" shape="rect" coords="223,71,370,94" href="/portscan.htm">
+  <area alt="Current IP" shape="rect" coords="136,72,223,94" href="/">
 </map>
 
 <table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody><tr>
-    <td><img src="img/26.gif" width="26" height="10"><img src="img/main_17.gif" width="551" height="17"></td>
+    <td><img alt="" src="img/26.gif" width="26" height="10"><img alt="" src="img/main_17.gif" width="551" height="17"></td>
   </tr>
 </tbody></table>
 
 &nbsp;<table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody><tr>
-    <td><img src="img/26.gif" width="26" height="10"></td>
+    <td><img alt="" src="img/26.gif" width="26" height="10"></td>
     <td>
       <div align="center">
-        <img src="img/pixel.gif" width="551" height="6"><br>
+        <img alt="" src="img/pixel.gif" width="551" height="6"><br>
 
         <table width="30" border="0" cellspacing="0" cellpadding="3">
           <tbody>
@@ -177,7 +176,7 @@ $hasAdmin = ($serverAdmin != '' && filter_var($serverAdmin, FILTER_VALIDATE_EMAI
             <tr>
               <td align="center">
                 <a href="/link.php">
-                  <img src="img/ippiyo.gif" width="88" height="31" border="0" alt="IPPiyo">
+                  <img src="img/ippiyo.gif" width="88" height="31" border="0" alt="[IPPiyo]">
                 </a>
               </td>
             </tr>

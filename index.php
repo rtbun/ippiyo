@@ -25,35 +25,35 @@ window.external.AddFavorite(url,title)
 <body bgcolor="#FFFFFF" text="#000000" link="#3300CC" vlink="#0000CC">
 <table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody><tr>
-    <td><img src="img/main_03.gif" width="577" height="126" usemap="#Map" border="0"></td>
+    <td><img alt="IPPiyo Navigation" src="img/main_03.gif" width="577" height="126" usemap="#Map" border="0"></td>
   </tr>
 </tbody></table>
 <table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody><tr>
-    <td><img src="img/26.gif" width="26" height="10"></td>
-    <td><img src="img/7.gif" width="19" height="300"></td>
+    <td><img alt="" src="img/26.gif" width="26" height="10"></td>
+    <td><img alt="" src="img/7.gif" width="19" height="300"></td>
     <td valign="top">
-      <p><img src="img/main_08.gif" width="511" height="17"><br>
-        <img src="img/main_10.gif" width="511" height="23"></p>
+      <p><img alt="" src="img/main_08.gif" width="511" height="17"><br>
+        <img alt="Current IP Address" src="img/main_10.gif" width="511" height="23"></p>
       <p align="center"><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="5" color="#000000"><b>
         <?= $_SERVER['REMOTE_ADDR'] ?>        <br>
         <a href="javascript:makeLink()"><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Add to Favorites</font></a>
         </b></font></p>
-      <p align="left"><img src="img/main_12.gif" width="511" height="24"></p>
+      <p align="left"><img alt="Advanced" src="img/main_12.gif" width="511" height="24"></p>
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tbody><tr>
-          <td width="6%"><img src="img/green.gif" width="25" height="25"></td>
+          <td width="6%"><img alt="-" src="img/bullet.gif" width="25" height="25"></td>
           <td width="94%"><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2" color="#000000">Name
             Address:
             <?php echo htmlspecialchars($nameAddress); ?>            </font></td>
         </tr>
         <tr>
-          <td width="6%"><img src="img/green.gif" width="25" height="25"></td>
+          <td width="6%"><img alt="-" src="img/bullet.gif" width="25" height="25"></td>
           <td width="94%"><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Remote
             Port: <?= $_SERVER['REMOTE_PORT'] ?> </font></td>
         </tr>
         <tr>
-          <td><img src="img/green.gif" width="25" height="25"></td>
+          <td><img alt="-" src="img/bullet.gif" width="25" height="25"></td>
           <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Browser:
             <?= $_SERVER['HTTP_USER_AGENT'] ?> </font></td>
         </tr>
@@ -64,24 +64,24 @@ window.external.AddFavorite(url,title)
       </tbody></table>
       <div align="center"></div>
     </td>
-    <td><img src="img/9.gif" width="21" height="300"></td>
+    <td><img alt="" src="img/9.gif" width="21" height="300"></td>
   </tr>
 </tbody></table>
 <map name="Map">
-  <area shape="rect" coords="373,71,418,94" href="/help.php">
-  <area shape="rect" coords="223,71,370,94" href="/portscan.php">
-  <area shape="rect" coords="136,72,223,94" href="/">
+  <area alt="Help" shape="rect" coords="373,71,418,94" href="/help.htm">
+  <area alt="Security Port Scan" shape="rect" coords="223,71,370,94" href="/portscan.htm">
+  <area alt="Current IP" shape="rect" coords="136,72,223,94" href="/">
 </map>
 <table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody><tr>
-    <td><img src="img/26.gif" width="26" height="10"><img src="img/main_17.gif" width="551" height="17"></td>
+    <td><img alt="" src="img/26.gif" width="26" height="10"><img alt="" src="img/main_17.gif" width="551" height="17"></td>
   </tr>
 </tbody></table>
 
 &nbsp;<table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
   <tbody><tr>
-    <td><img src="img/26.gif" width="26" height="10"></td>
-    <td><div align="center"><img src="img/pixel.gif" width="551" height="6"><br>
+    <td><img alt="" src="img/26.gif" width="26" height="10"></td>
+    <td><div align="center"><img alt="" src="img/pixel.gif" width="551" height="6"><br>
         <table width="30" border="0" cellspacing="0" cellpadding="3">
   <tbody>
     <tr>
@@ -98,7 +98,7 @@ window.external.AddFavorite(url,title)
     <tr>
       <td align="center">
         <a href="/link.php">
-          <img src="img/ippiyo.gif"
+          <img alt="[IPPiyo]" src="img/ippiyo.gif"
                width="88"
                height="31"
                border="0">
@@ -111,7 +111,7 @@ window.external.AddFavorite(url,title)
         - <a href="/privacy.php">Privacy Policy</a></font></div></td>
   </tr>
   <tr>
-    <td><div align="center"><img src="img/26.gif" width="26" height="10"></div></td>
+    <td><div align="center"><img alt="" src="img/26.gif" width="26" height="10"></div></td>
     <td align="center">&nbsp;</td>
   </tr>
   <tr>

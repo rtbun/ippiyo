@@ -2,6 +2,9 @@
 
 IPPiyo is a small open-source IP address information page based off the classic style of IPChicken.
 
+<img width="630" height="532" alt="image" src="https://github.com/user-attachments/assets/f89bb167-62f9-4bb7-807a-a5b09fb71f00" />
+
+
 It displays information already available to the web server, including:
 
 - Your IP address

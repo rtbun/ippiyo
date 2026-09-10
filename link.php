@@ -12,11 +12,10 @@ if ($path == '/' || $path == '\\' || $path == '.') {
 $base = $scheme . '://' . $host . $path;
 
 $linkcode = '<a href="' . $base . '/">' . "\r\n";
-$linkcode .= '<img src="' . $base . '/img/ippiyo.gif" width="88" height="31" border="0" alt="IPPiyo">' . "\r\n";
+$linkcode .= '<img src="' . $base . '/img/ippiyo.gif" width="88" height="31" border="0" alt="[IPPiyo]">' . "\r\n";
 $linkcode .= '</a>';
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
 <title>Link to IPPiyo</title>
@@ -30,7 +29,7 @@ $linkcode .= '</a>';
 Add IPPiyo on your site!<br><br>
 
 <a href="<?php echo htmlspecialchars($base, ENT_QUOTES); ?>/">
-<img src="img/ippiyo.gif" width="88" height="31" border="0" alt="IPPiyo">
+<img src="img/ippiyo.gif" width="88" height="31" border="0" alt="[IPPiyo]">
 </a>
 </font>
 </p>

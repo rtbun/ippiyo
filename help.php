@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<title>IPPiyo - Learn About IP Addresses</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Description" content="IPPiyo will display your current IP address.">
+<meta name="keywords" content="ip, find your ip address, ipaddress, address, ipconfig, whois, vpn, admin, dns, tcp, portscan, telnet, ping, network, router, openssh, linux, ipv6">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#3300CC" vlink="#0000CC">
+
+<table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody><tr>
+    <td><img src="img/main_03.gif" width="577" height="126" usemap="#Map" border="0"></td>
+  </tr>
+</tbody></table>
+
+<table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody><tr>
+
+    <td width="26" valign="top">
+      <img src="img/26.gif" width="26" height="10">
+    </td>
+
+    <td width="19" valign="top" background="img/7.gif">
+      <img src="img/7.gif" width="19" height="300">
+    </td>
+
+    <td width="511" valign="top">
+
+      <img src="img/main_08.gif" width="511" height="0" border="0"><br>
+
+      <table width="511" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td>
+            <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="4" color="#000000">
+              <b>Learn About IP Addresses</b>
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#000000" height="1" style="font-size:1px; line-height:1px;">
+            <img src="img/pixel.gif" style="display:block" width="511" height="1">
+          </td>
+        </tr>
+      </tbody></table>
+
+      <br>
+
+      <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2" color="#000000">
+
+      <b>Q: What is an IP Address?</b>
+
+      <br><br>
+
+      <b>A:</b> Every device that communicates using the Internet Protocol has an
+      IP address used to identify its network connection.
+
+      <br><br>
+
+      An IPv4 address consists of four numbers separated by periods. Each number
+      can range from 0 to 255. For example:
+
+      <blockquote>
+        <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">
+          <i>206.13.28.12</i>
+        </font>
+      </blockquote>
+
+      IPv6 is a newer version of the Internet Protocol and uses much longer
+      addresses. For example:
+
+      <blockquote>
+        <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">
+          <i>2001:db8:1234:5678::1</i>
+        </font>
+      </blockquote>
+
+      Computers on a local network can also use private IP addresses such as
+      192.168.0.158. These addresses are not normally reachable directly from
+      the public Internet.
+
+      <br><br><br>
+
+      <b>Q: What is a Name Address?</b>
+
+      <br><br>
+
+      <b>A:</b> IPPiyo performs a reverse DNS lookup on your IP address. If a
+      hostname is associated with the address, IPPiyo displays it.
+
+      <br><br>
+
+      For example, a reverse DNS lookup might return a hostname belonging to an
+      Internet provider, network, server, or local computer.
+
+      <br><br>
+
+      Some IP addresses do not have a reverse DNS hostname. In that case the
+      lookup may simply return the IP address.
+
+      <br><br><br>
+
+      <b>Q: What is the Remote Port?</b>
+
+      <br><br>
+
+      <b>A:</b> When your browser connects to this web server, your computer
+      selects a temporary TCP port for the connection.
+
+      <br><br>
+
+      The Remote Port displayed by IPPiyo is that temporary port number. It is
+      not an open port scan of your computer and will often change when you make
+      a new connection.
+
+      <br><br><br>
+
+      <b>Q: What are ports?</b>
+
+      <br><br>
+
+      <b>A:</b> TCP and UDP ports are numbered endpoints used by network
+      applications and services.
+
+      <br><br>
+
+      Port numbers range from 0 through 65535. Certain port numbers are commonly
+      associated with particular services.
+
+      <br><br>
+
+      Here is a list of some common ports and how they are typically used:
+
+      </font>
+
+      <br><br>
+
+      <table width="468" border="0" align="center" cellpadding="1" cellspacing="0">
+        <tbody>
+
+        <tr>
+          <th width="106">
+            <div align="left">
+              <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">
+                Port Number
+              </font>
+            </div>
+          </th>
+          <th width="352">
+            <div align="left">
+              <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">
+                Description
+              </font>
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">20</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">FTP Data</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">21</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">FTP Control</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">22</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">SSH</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">23</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Telnet</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">25</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">SMTP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">53</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">DNS</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">67 / 68</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">DHCP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">70</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Gopher</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">79</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Finger</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">80</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">HTTP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">110</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">POP3</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">123</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">NTP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">143</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">IMAP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">161</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">SNMP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">389</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">LDAP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">443</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">HTTPS</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">445</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Microsoft-DS / SMB</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">587</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Mail Submission</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">993</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">IMAP over TLS</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">995</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">POP3 over TLS</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">1080</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">SOCKS Proxy</font></td>
+        </tr>
+
+        </tbody>
+      </table>
+
+      <br><br>
+
+      <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2" color="#000000">
+
+      <b>Q: What is the Browser information?</b>
+
+      <br><br>
+
+      <b>A:</b> Web browsers normally send a User-Agent string to the server with
+      each request. IPPiyo displays the User-Agent string your browser sent.
+
+      <br><br>
+
+      The string can contain information about the browser, operating system,
+      rendering engine, and compatibility. It can also be changed or spoofed, so
+      it should not be treated as guaranteed information about the computer.
+
+      </font>
+
+      <br><br>
+
+      <p align="center">
+        <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="3" color="#3300CC">
+          <b><a href="/">Display My Current IP Address</a></b>
+        </font>
+      </p>
+
+      <br>
+
+    </td>
+
+    <td width="21" valign="top" background="img/9.gif">
+      <img src="img/9.gif" width="21" height="300">
+    </td>
+
+  </tr>
+</tbody></table>
+
+<map name="Map">
+  <area shape="rect" coords="373,71,418,94" href="/help.php">
+  <area shape="rect" coords="223,71,370,94" href="/portscan.php">
+  <area shape="rect" coords="136,72,223,94" href="/">
+</map>
+
+<table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody><tr>
+    <td><img src="img/26.gif" width="26" height="10"><img src="img/main_17.gif" width="551" height="17"></td>
+  </tr>
+</tbody></table>
+
+&nbsp;<table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody><tr>
+    <td><img src="img/26.gif" width="26" height="10"></td>
+    <td><div align="center"><img src="img/pixel.gif" width="551" height="6"><br>
+        <table width="30" border="0" cellspacing="0" cellpadding="3">
+  <tbody>
+    <tr>
+      <td width="88">
+        <div align="center">
+          <b>
+            <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="1">
+              Link To Us:
+            </font>
+          </b>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="/link.php">
+          <img src="img/ippiyo.gif"
+               width="88"
+               height="31"
+               border="0">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+        <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="1">IPPiyo is OPEN !
+        - <a href="/privacy.php">Privacy Policy</a></font></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><img src="img/26.gif" width="26" height="10"></div></td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center"></div></td>
+  </tr>
+</tbody></table>
+
+</body></html>

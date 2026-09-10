@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<title>IPPiyo - Port Scanning and Nmap</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Description" content="Learn about port scanning, network ports and Nmap.">
+<meta name="keywords" content="ip, find your ip address, ipaddress, address, ipconfig, whois, vpn, admin, dns, tcp, portscan, telnet, ping, network, router, openssh, linux, ipv6">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#3300CC" vlink="#0000CC">
+
+<table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody><tr>
+    <td><img src="img/main_03.gif" width="577" height="126" usemap="#Map" border="0"></td>
+  </tr>
+</tbody></table>
+
+<table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody><tr>
+
+    <td width="26" valign="top">
+      <img src="img/26.gif" width="26" height="10">
+    </td>
+
+    <td width="19" valign="top" background="img/7.gif">
+      <img src="img/7.gif" width="19" height="300">
+    </td>
+
+    <td width="511" valign="top">
+
+      <img src="img/pixel.gif" width="511" height="0" border="0"><br>
+
+      <table width="511" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td>
+            <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="4" color="#000000">
+              <b>Port Scanning and Nmap</b>
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#000000" height="1" style="font-size:1px; line-height:1px;">
+            <img src="img/pixel.gif" width="511" height="1" border="0" style="display:block">
+          </td>
+        </tr>
+      </tbody></table>
+
+      <br>
+
+      <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2" color="#000000">
+
+      <b>Q: What is a port scan?</b>
+
+      <br><br>
+
+      <b>A:</b> A port scan is a method of checking which network ports on a
+      computer or other device are accepting connections.
+
+      <br><br>
+
+      Network services listen on numbered TCP or UDP ports. For example, a web
+      server may listen on TCP port 80 for HTTP or TCP port 443 for HTTPS.
+
+      <br><br>
+
+      A port scanner sends network requests to selected ports and observes how
+      the target responds.
+
+      <br><br><br>
+
+      <b>Q: What can the result of a port scan mean?</b>
+
+      <br><br>
+
+      <b>A:</b> A scanner will usually describe a port using terms such as
+      open, closed, or filtered.
+
+      <br><br>
+
+      <b>Open</b> generally means that a program is listening on the port and
+      accepted or responded to the connection attempt.
+
+      <br><br>
+
+      <b>Closed</b> generally means the computer was reachable but no service
+      was listening on that port.
+
+      <br><br>
+
+      <b>Filtered</b> generally means that a firewall or another network device
+      prevented the scanner from determining whether the port was open or
+      closed.
+
+      <br><br>
+
+      Results can depend on the type of scan, firewall rules, routing, NAT,
+      protocol, and the network from which the scan is performed.
+
+      <br><br><br>
+
+      <b>Q: What is Nmap?</b>
+
+      <br><br>
+
+      <b>A:</b> Nmap, short for Network Mapper, is a network exploration and
+      security auditing program.
+
+      <br><br>
+
+      It can discover hosts on a network, test TCP and UDP ports, identify
+      services, and gather other information about systems that are reachable
+      from the computer running Nmap.
+
+      <br><br>
+
+      Nmap is commonly used by network administrators to inventory systems,
+      troubleshoot connectivity, verify firewall rules, and check services on
+      systems they manage.
+
+      <br><br><br>
+
+      <b>Q: Is an open port automatically dangerous?</b>
+
+      <br><br>
+
+      <b>A:</b> No. An open port simply means that a network service is
+      listening and reachable from the scanner.
+
+      <br><br>
+
+      Whether that is a problem depends on what service is running, whether it
+      is supposed to be reachable, how it is configured, and whether the
+      software is kept up to date.
+
+      <br><br>
+
+      A web server intentionally exposed on port 443, for example, is very
+      different from an administrative service accidentally exposed to the
+      entire Internet.
+
+      <br><br><br>
+
+      <b>Q: Does my Remote Port on IPPiyo mean that port is open?</b>
+
+      <br><br>
+
+      <b>A:</b> No.
+
+      <br><br>
+
+      The Remote Port displayed on the IPPiyo home page is the temporary source
+      port your computer used for its connection to this web server.
+
+      <br><br>
+
+      It is not the result of a port scan and does not indicate that the same
+      port is accepting incoming connections on your computer.
+
+      <br><br><br>
+
+      <b>Q: What is the difference between TCP and UDP scanning?</b>
+
+      <br><br>
+
+      <b>A:</b> TCP is connection-oriented and normally provides clearer
+      responses indicating whether a port is accepting connections.
+
+      <br><br>
+
+      UDP does not establish connections in the same way. Many UDP services do
+      not reply to unexpected packets, so UDP scan results can be less certain
+      and may take longer to determine.
+
+      <br><br><br>
+
+      <b>Q: What are some common ports?</b>
+
+      </font>
+
+      <br><br>
+
+      <table width="468" border="0" align="center" cellpadding="1" cellspacing="0">
+        <tbody>
+
+        <tr>
+          <th width="106">
+            <div align="left">
+              <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">
+                Port Number
+              </font>
+            </div>
+          </th>
+          <th width="352">
+            <div align="left">
+              <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">
+                Common Use
+              </font>
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">21</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">FTP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">22</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">SSH</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">23</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Telnet</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">25</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">SMTP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">53</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">DNS</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">80</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">HTTP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">110</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">POP3</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">143</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">IMAP</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">443</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">HTTPS</font></td>
+        </tr>
+
+        <tr>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">445</font></td>
+          <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">SMB / Microsoft-DS</font></td>
+        </tr>
+
+        </tbody>
+      </table>
+
+      <br><br>
+
+      <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2" color="#000000">
+
+      <b>Q: Does IPPiyo perform port scans?</b>
+
+      <br><br>
+
+      <b>A:</b> No. This IPPiyo page only provides information about port
+      scanning and network services.
+
+      <br><br>
+
+      IPPiyo does not automatically probe ports on visitors' computers and does
+      not provide a remote port scanning service.
+
+      <br><br><br>
+
+      <b>Q: Can I use Nmap on any computer?</b>
+
+      <br><br>
+
+      <b>A:</b> You should only scan systems and networks that you own or have
+      permission to test.
+
+      <br><br>
+
+      Port scans can appear in firewall and intrusion detection logs, and
+      network operators may treat unexpected scanning as suspicious activity.
+
+      <br><br>
+
+      For learning and testing, use your own computer, your own network, or a
+      laboratory environment specifically intended for network testing.
+
+      </font>
+
+      <br><br>
+
+      <p align="center">
+        <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">
+          <a href="/">Display My Current IP Address</a>
+        </font>
+      </p>
+
+      <br>
+
+    </td>
+
+    <td width="21" valign="top" background="img/9.gif">
+      <img src="img/9.gif" width="21" height="300">
+    </td>
+
+  </tr>
+</tbody></table>
+
+<map name="Map">
+  <area shape="rect" coords="373,71,418,94" href="/help.php">
+  <area shape="rect" coords="223,71,370,94" href="/portscan.php">
+  <area shape="rect" coords="136,72,223,94" href="/">
+</map>
+
+<table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody><tr>
+    <td><img src="img/26.gif" width="26" height="10"><img src="img/main_17.gif" width="551" height="17"></td>
+  </tr>
+</tbody></table>
+
+&nbsp;<table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody><tr>
+    <td><img src="img/26.gif" width="26" height="10"></td>
+    <td><div align="center"><img src="img/pixel.gif" width="551" height="6"><br>
+
+        <table width="30" border="0" cellspacing="0" cellpadding="3">
+          <tbody>
+            <tr>
+              <td width="88">
+                <div align="center">
+                  <b>
+                    <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="1">
+                      Link To Us:
+                    </font>
+                  </b>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <a href="/link.php">
+                  <img src="img/ippiyo.gif" width="88" height="31" border="0">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="1">
+          IPPiyo is OPEN ! - <a href="/privacy.php">Privacy Policy</a>
+        </font>
+
+        </div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><img src="img/26.gif" width="26" height="10"></div></td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="center"></div></td>
+  </tr>
+</tbody></table>
+
+</body>
+</html>

@@ -1,3 +1,8 @@
+<?php
+$ip = $_SERVER['REMOTE_ADDR'];
+$nameAddress = gethostbyaddr($ip);
+?>
+
 <html><head>
 <title>IPPiyo - Find Your IP Address!</title>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
@@ -31,7 +36,7 @@ window.external.AddFavorite(url,title)
       <p><img src="img/main_08.gif" width="511" height="17"><br>
         <img src="img/main_10.gif" width="511" height="23"></p>
       <p align="center"><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="5" color="#000000"><b>
-        209.237.238.181        <br>
+        <?= $_SERVER['REMOTE_ADDR'] ?>        <br>
         <a href="javascript:makeLink()"><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Add to Favorites</font></a>
         </b></font></p>
       <p align="left"><img src="img/main_12.gif" width="511" height="24"></p>
@@ -40,17 +45,17 @@ window.external.AddFavorite(url,title)
           <td width="6%"><img src="img/green.gif" width="25" height="25"></td>
           <td width="94%"><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2" color="#000000">Name
             Address:
-            crawl31-public.alexa.com            </font></td>
+            <?php echo htmlspecialchars($nameAddress); ?>            </font></td>
         </tr>
         <tr>
           <td width="6%"><img src="img/green.gif" width="25" height="25"></td>
           <td width="94%"><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Remote
-            Port: 55032 </font></td>
+            Port: <?= $_SERVER['REMOTE_PORT'] ?> </font></td>
         </tr>
         <tr>
           <td><img src="img/green.gif" width="25" height="25"></td>
           <td><font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="2">Browser:
-            ia_archiver </font></td>
+            <?= $_SERVER['HTTP_USER_AGENT'] ?> </font></td>
         </tr>
         <tr>
           <td width="6%">&nbsp;</td>
@@ -64,6 +69,7 @@ window.external.AddFavorite(url,title)
 </tbody></table>
 <map name="Map">
   <area shape="rect" coords="373,71,418,94" href="/help.php">
+  <area shape="rect" coords="223,71,370,94" href="/portscan.php">
   <area shape="rect" coords="136,72,223,94" href="/">
 </map>
 <table width="577" border="0" cellspacing="0" cellpadding="0" align="center">
@@ -91,7 +97,7 @@ window.external.AddFavorite(url,title)
     </tr>
     <tr>
       <td align="center">
-        <a href="/link.html">
+        <a href="/link.php">
           <img src="img/ippiyo.gif"
                width="88"
                height="31"
@@ -102,7 +108,7 @@ window.external.AddFavorite(url,title)
   </tbody>
 </table>
         <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="1">IPPiyo is OPEN !
-        - <a href="/privacy.html">Privacy Policy</a></font></div></td>
+        - <a href="/privacy.php">Privacy Policy</a></font></div></td>
   </tr>
   <tr>
     <td><div align="center"><img src="img/26.gif" width="26" height="10"></div></td>

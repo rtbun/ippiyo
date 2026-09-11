@@ -108,7 +108,7 @@ window.external.AddFavorite(url,title)
   </tbody>
 </table>
         <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="1">IPPiyo is OPEN !
-        - <a href="/privacy.php">Privacy Policy</a></font></div></td>
+        - <a href="/privacy.php">Privacy Policy</a> - <a href="https://github.com/rtbun/ippiyo">GitHub</a></font></div></td>
   </tr>
   <tr>
     <td><div align="center"><img alt="" src="img/26.gif" width="26" height="10"></div></td>

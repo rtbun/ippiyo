@@ -184,7 +184,7 @@ $hasAdmin = ($serverAdmin != '' && filter_var($serverAdmin, FILTER_VALIDATE_EMAI
         </table>
 
         <font face="MS PGothic, IPAMonaPGothic, Monapo, Mona, submona, sans-serif" size="1">
-          IPPiyo is OPEN ! - <a href="/privacy.php">Privacy Policy</a>
+          IPPiyo is OPEN ! - <a href="/privacy.php">Privacy Policy</a> - <a href="https://github.com/rtbun/ippiyo">GitHub</a>
         </font>
       </div>
     </td>
